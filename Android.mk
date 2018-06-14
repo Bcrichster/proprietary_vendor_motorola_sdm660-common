@@ -16,7 +16,7 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifneq ($(filter payton,$(TARGET_DEVICE)),)
+ifneq ($(filter payton evert,$(TARGET_DEVICE)),)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE := com.quicinc.cne.api@1.0
