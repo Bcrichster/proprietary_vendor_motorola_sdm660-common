@@ -37,11 +37,13 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sdm660-common/proprietary/framework/qcrilhook.jar:system/framework/qcrilhook.jar \
     vendor/motorola/sdm660-common/proprietary/framework/qti-telephony-common.jar:system/framework/qti-telephony-common.jar \
     vendor/motorola/sdm660-common/proprietary/framework/qti-vzw-ims-internal.jar:system/framework/qti-vzw-ims-internal.jar \
+    vendor/motorola/sdm660-common/proprietary/lib/fm_helium.so:system/lib/fm_helium.so \
     vendor/motorola/sdm660-common/proprietary/lib/lib-imscamera.so:system/lib/lib-imscamera.so \
     vendor/motorola/sdm660-common/proprietary/lib/lib-imsvideocodec.so:system/lib/lib-imsvideocodec.so \
     vendor/motorola/sdm660-common/proprietary/lib/lib-imsvtextutils.so:system/lib/lib-imsvtextutils.so \
     vendor/motorola/sdm660-common/proprietary/lib/lib-imsvtutils.so:system/lib/lib-imsvtutils.so \
     vendor/motorola/sdm660-common/proprietary/lib/libdiag_system.so:system/lib/libdiag_system.so \
+    vendor/motorola/sdm660-common/proprietary/lib/libfm-hci.so:system/lib/libfm-hci.so \
     vendor/motorola/sdm660-common/proprietary/lib/libimscamera_jni.so:system/lib/libimscamera_jni.so \
     vendor/motorola/sdm660-common/proprietary/lib/libimsmedia_jni.so:system/lib/libimsmedia_jni.so \
     vendor/motorola/sdm660-common/proprietary/lib/libqmi_cci_system.so:system/lib/libqmi_cci_system.so \
@@ -59,12 +61,14 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sdm660-common/proprietary/lib/vendor.qti.hardware.qdutils_disp@1.0.so:system/lib/vendor.qti.hardware.qdutils_disp@1.0.so \
     vendor/motorola/sdm660-common/proprietary/lib/vendor.qti.hardware.qteeconnector@1.0.so:system/lib/vendor.qti.hardware.qteeconnector@1.0.so \
     vendor/motorola/sdm660-common/proprietary/lib/vendor.qti.imsrtpservice@1.0.so:system/lib/vendor.qti.imsrtpservice@1.0.so \
+    vendor/motorola/sdm660-common/proprietary/lib64/fm_helium.so:system/lib64/fm_helium.so \
     vendor/motorola/sdm660-common/proprietary/lib64/lib-imscamera.so:system/lib64/lib-imscamera.so \
     vendor/motorola/sdm660-common/proprietary/lib64/lib-imsvideocodec.so:system/lib64/lib-imsvideocodec.so \
     vendor/motorola/sdm660-common/proprietary/lib64/lib-imsvt.so:system/lib64/lib-imsvt.so \
     vendor/motorola/sdm660-common/proprietary/lib64/lib-imsvtextutils.so:system/lib64/lib-imsvtextutils.so \
     vendor/motorola/sdm660-common/proprietary/lib64/lib-imsvtutils.so:system/lib64/lib-imsvtutils.so \
     vendor/motorola/sdm660-common/proprietary/lib64/libdiag_system.so:system/lib64/libdiag_system.so \
+    vendor/motorola/sdm660-common/proprietary/lib64/libfm-hci.so:system/lib64/libfm-hci.so \
     vendor/motorola/sdm660-common/proprietary/lib64/libimscamera_jni.so:system/lib64/libimscamera_jni.so \
     vendor/motorola/sdm660-common/proprietary/lib64/libimsmedia_jni.so:system/lib64/libimsmedia_jni.so \
     vendor/motorola/sdm660-common/proprietary/lib64/libqmi_cci_system.so:system/lib64/libqmi_cci_system.so \
@@ -578,6 +582,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sdm660-common/proprietary/vendor/radio/qcril_database/qcril.db:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/qcril.db
 
 PRODUCT_PACKAGES += \
+    vendor.qti.hardware.fm@1.0 \
     com.quicinc.cne.api@1.0 \
     com.quicinc.cne.constants@1.0 \
     com.quicinc.cne.constants@2.0 \
